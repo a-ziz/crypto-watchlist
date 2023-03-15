@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="row-span-2 mx-auto">
               <img
                 src={heroImage}
-                alt="hero image"
+                alt="hero section"
                 className="max-w-[400px] lg:max-w-[600px] object-contain"
               />
             </div>

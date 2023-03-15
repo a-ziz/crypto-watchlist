@@ -28,7 +28,9 @@ const CryptoSearch = ({ coins }) => {
             <th></th>
             <th>Price</th>
             <th>24h</th>
-            <th className="hidden md:table-cell">24h Volume</th>
+            <th className="hidden md:table-cell" key={coins.id}>
+              24h Volume
+            </th>
             <th className="hidden sm:table-cell">Mkt</th>
             <th>Last 7 Days</th>
           </tr>
@@ -47,7 +49,7 @@ const CryptoSearch = ({ coins }) => {
               }
             })
             .map((coin) => {
-              return <CoinList coin={coin} />;
+              return <CoinList key={coin.id} coin={coin} />;
             })}
         </tbody>
       </table>
