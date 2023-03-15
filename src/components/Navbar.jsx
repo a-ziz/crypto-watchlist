@@ -26,7 +26,9 @@ const Navbar = () => {
   return (
     <div className="rounded-div flex items-center justify-between h-20">
       <Link to="/">
-        <h1 className="text-2xl">CryptoList</h1>
+        <h1 className="text-xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#afcfee] to-[#347af4b7]">
+          Legecoin
+        </h1>
       </Link>
       <div className="hidden md:block">
         <ThemeToggle />
@@ -45,7 +47,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/signup"
-            className="bg-button text-btnText px-5 py-2 ml-2 rounded-2xl shadow-lg hover:shadow-2xl"
+            className="bg-button text-btnText px-5 py-2 ml-2 rounded-2xl bg-gradient-to-tr from-[#76c1f0] via-[#97bdf2] to-[#b7cdf4] text-[#2d2827] hover:from-[#199aea] hover:via-[#c9d9ee] hover:to-[#a5c0ed]"
           >
             Sign Up
           </Link>
