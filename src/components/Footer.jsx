@@ -59,10 +59,7 @@ const Footer = () => {
                     type="email"
                     placeholder="Enter your email"
                   />
-                  <button
-                    className="bg-button text-btnText px-4 p-2 w-full rounded-2xl shadow-lg hover:shadow-xl md:w-auto my-2"
-                    type="submit"
-                  >
+                  <button className="bg-button text-btnText px-4 p-2 w-full rounded-2xl shadow-lg hover:shadow-xl md:w-auto my-2">
                     Sign Up
                   </button>
                 </form>
@@ -115,7 +112,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center py-4">
-        Learn before buying to lower your risks.
+        Learn before buying and lower your risks.
       </p>
     </div>
   );

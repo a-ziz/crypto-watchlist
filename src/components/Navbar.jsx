@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="rounded-div flex items-center justify-between h-20">
       <Link to="/">
-        <h1 className="text-xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#afcfee] to-[#347af4b7]">
+        <h1 className="text-xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#2d63a5] via-[#5a9bfd] to-[#4c7ed4b7]">
           Legecoin
         </h1>
       </Link>
