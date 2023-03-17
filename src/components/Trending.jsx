@@ -38,7 +38,9 @@ const Trending = () => {
                 </div>
                 <div className="flex items-center">
                   <img className="w-4 pt-1 mr-2" src={bitCoinIcon} alt="" />
-                  <p>{coin.item.price_btc.toFixed(7)}</p>
+                  {coin.item.price_btc !== null && (
+                    <p>{coin.item.price_btc.toFixed(7)}</p>
+                  )}
                 </div>
               </div>
             </div>

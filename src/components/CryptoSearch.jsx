@@ -47,6 +47,7 @@ const CryptoSearch = ({ coins }) => {
               ) {
                 return value;
               }
+              return null;
             })
             .map((coin) => {
               return <CoinList key={coin.id} coin={coin} />;

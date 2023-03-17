@@ -27,6 +27,7 @@ const CoinList = ({ coin }) => {
       alert("Please sign in to save coin to your watch list");
     }
   };
+
   return (
     <tr className="h-[80px] border-b overflow-hidden">
       <td onClick={saveCoin}>
