@@ -20,30 +20,31 @@ const Trending = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {trending.map((coin, index) => {
           return (
-            <div
-              key={index}
-              className="rounded-div flex justify-between p-4 hover:scale-105 ease-in-out duration-200"
-            >
-              <div className="flex w-full items-center justify-between">
-                <div className="flex">
-                  <img
-                    className="mr-4 rounded-full"
-                    src={coin.item.small}
-                    alt=""
-                  />
-                  <div>
-                    <p className="font-bold">{coin.item.name}</p>
-                    <p>{coin.item.symbol}</p>
+            coin.item.price_btc !== null && (
+              <div
+                key={index}
+                className="rounded-div flex justify-between p-4 hover:scale-105 ease-in-out duration-200"
+              >
+                <div className="flex w-full items-center justify-between">
+                  <div className="flex">
+                    <img
+                      className="mr-4 rounded-full"
+                      src={coin.item.small}
+                      alt=""
+                    />
+                    <div>
+                      <p className="font-bold">{coin.item.name}</p>
+                      <p>{coin.item.symbol}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <img className="w-4 pt-1 mr-2" src={bitCoinIcon} alt="" />
+
+                    <p>{coin.item.price_btc.toFixed(7)}</p>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <img className="w-4 pt-1 mr-2" src={bitCoinIcon} alt="" />
-                  {coin.item.price_btc !== null && (
-                    <p>{coin.item.price_btc.toFixed(7)}</p>
-                  )}
-                </div>
               </div>
-            </div>
+            )
           );
         })}
       </div>

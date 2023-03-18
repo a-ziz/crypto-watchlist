@@ -17,6 +17,8 @@
   --color-text-accent: #65aff9;
   --color-bg-input: #4a5361;
   --color-bg-button: #5ca8f3;
+  --color-bg-buttonSecondary: #ffffff;
+  --color-text-btn: #000000;
 }
 .light {
   --color-bg-primary: #ffffff;
@@ -26,4 +28,6 @@
   --color-text-accent: #2b6cb0;
   --color-bg-input: #edf2f7;
   --color-bg-button: #2b6cb0;
+  --color-bg-buttonSecondary: #000000;
+  --color-text-btn: #ffffff;
 }

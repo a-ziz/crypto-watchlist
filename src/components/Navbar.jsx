@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="rounded-div flex items-center justify-between h-20">
       <Link to="/">
-        <h1 className="text-xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#2d63a5] via-[#5a9bfd] to-[#4c7ed4b7]">
+        <h1 className="text-xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#00ffff] via-[#009eff] to-[#003dff]">
           Legecoin
         </h1>
       </Link>
@@ -41,13 +41,13 @@ const Navbar = () => {
           <button onClick={handleSignOut}>Sign Out</button>
         </div>
       ) : (
-        <div className="hidden md:block">
+        <div className="hidden md:block text-transparent bg-clip-text bg-gradient-to-r from-[#00ffff] via-[#009eff] to-[#003dff]">
           <Link to="/signin" className="p-4 hover:text-accent">
             Sign In
           </Link>
           <Link
             to="/signup"
-            className="bg-button text-btnText px-5 py-2 ml-2 rounded-2xl bg-gradient-to-tr from-[#76c1f0] via-[#97bdf2] to-[#b7cdf4] text-[#2d2827] hover:from-[#199aea] hover:via-[#c9d9ee] hover:to-[#a5c0ed]"
+            className="bg-button text-black px-5 py-2 ml-2 rounded-2xl bg-gradient-to-r from-[#00ffff] via-[#009eff] to-[#4666cf] hover:from-[#199aea] hover:via-[#74a1dd] hover:to-[#a5c0ed]"
           >
             Sign Up
           </Link>
@@ -67,13 +67,13 @@ const Navbar = () => {
         }
       >
         <ul className="w-full p-4">
-          <li onClick={handleMenu} className="border-b py-6">
+          <li onClick={handleMenu} className="border-b py-6 hover:text-accent">
             <Link to="/">Home</Link>
           </li>
-          <li onClick={handleMenu} className="border-b py-6">
+          <li onClick={handleMenu} className="border-b py-6  hover:text-accent">
             <Link to="/account">Account</Link>
           </li>
-          <li className="py-6">
+          <li className="py-6  hover:text-accent">
             <ThemeToggle />
           </li>
         </ul>
