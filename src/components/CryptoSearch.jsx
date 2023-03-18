@@ -10,9 +10,8 @@ const CryptoSearch = ({ coins }) => {
         <h1 className="text-2xl font-bold my-2">Search Crypto Coin</h1>
         <form>
           <input
-            className="w-full bg-primary border border-input px-4 py-2 rounded-xl shadow-xl"
+            className="w-full text-primary bg-primary border border-input px-4 py-2 rounded-xl shadow-xl"
             onChange={(e) => setsearchCrypto(e.target.value)}
-            style={{ color: "black" }}
             type="text"
             placeholder="Search a coin..."
           />

@@ -25,7 +25,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="rounded-div">
+    <div className="rounded-div mb-24">
       <div className="grid h-screen px-4 md:px-8 mb-6">
         <div className="mx-auto">
           <h1 className="mt-3 lg:mt-6 mb-2 text-3xl sm:text-4xl md:text-5xl font-bold uppercase text-transparent bg-clip-text bg-gradient-to-r from-[#00ffff] via-[#009eff] to-[#003dff]">
@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="flex justify-around max-w-[500px] my-8 lg:my-2">
+          <div className="flex justify-around max-w-[500px] py-8 lg:py-2">
             <Link
               className="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group"
               onClick={scrollToTrending}
