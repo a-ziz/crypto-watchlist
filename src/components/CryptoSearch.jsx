@@ -5,7 +5,7 @@ const CryptoSearch = ({ coins }) => {
   const [searchCrypto, setsearchCrypto] = useState("");
 
   return (
-    <div className="rounded-div my-4">
+    <div className="rounded-div my-4" id="searchCoin">
       <div className="flex flex-col md:flex-row justify-between pt-4 pb-6 text-center md:text-right">
         <h1 className="text-2xl font-bold my-2">Search Crypto Coin</h1>
         <form>
